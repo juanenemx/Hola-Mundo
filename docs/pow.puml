@@ -1,0 +1,60 @@
+@startuml mascota
+
+class Mascota
+class Vida
+class PapelHigienico
+class Toallitas
+class Hinodoro
+class Jabon
+class Comida
+class Instrumento
+class Camaron
+class Pescado
+class Carne
+class Ensalada
+class Coche
+class Avion
+class Cohete
+class Transporte
+class Economia
+class Moneda
+
+
+
+Mascota *-- Vida
+Mascota o-- PapelHigienico
+Mascota o-- Toallitas
+Mascota o-- Hinodoro
+Mascota o-- Jabon
+
+PapelHigienico --|> Instrumento
+Toallitas --|> Instrumento
+Hinodoro --|> Instrumento
+Jabon --|> Instrumento
+
+Mascota o-- Camaron
+Mascota o-- Pescado
+Mascota o-- Carne
+Mascota o-- Ensalada
+
+Camaron --|> Comida
+Pescado --|> Comida
+Carne --|> Comida
+Ensalada --|> Comida
+
+Mascota o-- Coche
+Mascota o-- Avion
+Mascota o-- Cohete
+
+Coche --|> Transporte
+Avion --|> Transporte
+Cohete --|> Transporte
+
+Economia *-- Moneda
+Mascota o-- Moneda
+Moneda *-- Comida
+Moneda *-- Instrumento
+Moneda *-- Transporte
+
+
+@enduml
