@@ -1,4 +1,4 @@
-@startuml mascota
+@startuml pow
 
 class Mascota
 class Vida
